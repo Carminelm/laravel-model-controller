@@ -8,7 +8,7 @@
 @section('content')
 <div class="container my-5">
     <h1>Home </h1>
-    <img src="{{ Vite::asset('resources/img/colibri.jpg') }}" alt="" class="img-fluid">
+    
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur totam magni consectetur voluptatem earum, cumque sint dolores non culpa, doloremque nostrum obcaecati iste repellat natus molestias, aperiam ullam eveniet odit.
     </p>
