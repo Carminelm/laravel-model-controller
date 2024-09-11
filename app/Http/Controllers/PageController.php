@@ -31,9 +31,11 @@ class PageController extends Controller
 
         $movies = Movie::all();
 
+        $movies = Movie::orderBy('id')->get();
 
 
 
-        return view('home',compact('movies'));
+
+        return view('movies',compact('movies'));
     }
 }

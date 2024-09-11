@@ -6,17 +6,21 @@
 @endsection
 
 @section('content')
-<div class="container my-5">
-    <h1>Home </h1>
-    
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur totam magni consectetur voluptatem earum, cumque sint dolores non culpa, doloremque nostrum obcaecati iste repellat natus molestias, aperiam ullam eveniet odit.
-    </p>
-</div>
+<table class="table">
+@foreach ($movies as $movie)
+  <tbody>
+    <tr>
+      <td>{{$movie->id}}</td>
+      <td>{{$movie->title}}<</td>
+      <td>{{$movie->original_title}}</td>
+      <td>{{$movie->nationality}}</td>
+      <td>{{$movie->date}}</td>
+      <td>{{$movie->vote}}</td>
+    </tr>
+@endforeach
+  </tbody>
+</table>
 
 @endsection
 
 
-@section('titlePage')
-    home
-@endsection
